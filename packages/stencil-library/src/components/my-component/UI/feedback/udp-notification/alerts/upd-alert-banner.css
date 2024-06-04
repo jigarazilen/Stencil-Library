@@ -1,0 +1,52 @@
+:host {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .alert-banner {
+    display: flex; /* Use flex display for horizontal alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between text and button */
+    padding: 5px;
+    padding-left: 24px;
+    padding-right: 8px;
+    box-sizing: border-box;
+    background-color: var(--success-color-light); /* Use a variable for background */
+    color: #000;
+    
+}
+
+  .banner-group {
+    display: flex;
+    width: 500px;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  }
+  
+  .info {
+    background-color: var(--success-color-light); /* Adjust colors as needed */
+    color: #000;
+  }
+  
+  .warning {
+    background-color: var(--success-color-light);
+    color: #000;
+  }
+  
+  .error {
+    background-color: var(--success-color-light);
+    color: #000;
+  }
+  
+  .success {
+    background-color: var(--success-color-light);
+    color: #000;
+  }
+  
+
+  .stencil-icon-button {
+    /* your styles for the icon button */
+    margin-left: auto; /* Pushes the button to the right */
+}

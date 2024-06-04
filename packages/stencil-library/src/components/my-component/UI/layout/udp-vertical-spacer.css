@@ -1,0 +1,10 @@
+/* udp-vertical-spacer.css */
+:host {
+    display: block;
+    width: 100%;
+  }
+  
+  .spacing-01 { height: var(--spacing-01); }
+  .spacing-07 { height: var(--spacing-07); }
+  .spacing-13 { height: var(--spacing-13); }
+  

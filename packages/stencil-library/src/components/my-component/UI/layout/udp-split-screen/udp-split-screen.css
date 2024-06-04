@@ -1,0 +1,70 @@
+/* udp-split-screen.css adjustments */
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.container:not(.open) {
+    display: none;
+}
+
+.panel {
+    flex-grow: 1;
+    overflow: auto;
+    /* Remove hover styles from .panel */
+    /* border-left: 1px solid rgb(219, 219, 219);  */
+    cursor: default; /* Ensure default cursor for panels */
+}
+
+/* Adjustments for better hover interaction */
+.resizer {
+    background-color: transparent; /* Keeps the resizer background transparent */
+    height: 100vh;
+    cursor: ew-resize; /* Indicates a resize cursor */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2px; /* Increase interactive area without affecting visual line */
+    box-sizing: content-box; /* Ensures padding doesn't add to the width */
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.resizer:hover {
+    background-color: var(--primary-color); /* Change to primary color on hover */
+    cursor: ew-resize;
+    /* Optionally, if you want to keep the visual line visible on hover, adjust here */
+}
+
+.resizer:hover::before {
+    background-color: transparent; /* Makes the grey line transparent on hover */
+}
+
+/* Visual indicator for the draggable area - a centered line */
+.resizer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%; /* Keeps the line visually centered */
+    transform: translateX(-50%);
+    width: 2px; /* Visual line width */
+    height: 100%;
+    background-color: rgb(219, 219, 219); /* Default color */
+    transition: background-color 0.3s ease; /* Smooth transition for the line color */
+}
+
+
+
+
+.drag-handle {
+    content: ''; /* Adjust if using an icon or symbol */
+    font-size: 24px;
+    color: #666;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,51 @@
+.icon-button {
+    background: rgb(255, 255, 255);
+    /* border: 1px solid rgb(171, 177, 174); */
+    border: 0px;
+    border-radius: 25px;  /* Changed from 50% to 25px */
+    /* min-width: 110px;   */
+    /* height: 34px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 4px;
+    /* padding-right: 16px;
+    padding-left: 16px; */
+    padding: 10px;
+  }
+  
+  .icon-button-secondary {
+    background: transparent; 
+    border: 0px;
+    color:  var(--primary-color);
+    border-radius: 25px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 4px;
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+  
+  .icon-button.no-background {
+    background: transparent;
+    border: 0px;
+  }
+
+  button{
+    position: relative;
+  }
+
+  button[title]:not([title="Save View"]):not([title='']):hover:after{
+    content: attr(title);
+    background-color: black;
+    color:white;
+    position:absolute;
+    top:110%;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 10;
+  }

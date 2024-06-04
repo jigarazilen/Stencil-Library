@@ -1,0 +1,44 @@
+.tab-header {
+    display: flex;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .tab-header button {
+    flex-grow: 1;
+    padding: 16px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .tab-header button.active {
+    border-bottom: 2px solid 'var(--secondary-color)';
+    font-weight: 600;
+  }
+  
+  .tab-content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: #ffffff;
+  }
+  
+  .tab-header button {
+    cursor: pointer;
+    border: none;
+    padding: 16px;
+    background-color: transparent;
+    color: #757575;
+  }
+  
+  .tab-header button.active {
+    border-bottom: 2px solid #344861;
+    color: #344861;
+    font-weight: 600;
+  }
+  

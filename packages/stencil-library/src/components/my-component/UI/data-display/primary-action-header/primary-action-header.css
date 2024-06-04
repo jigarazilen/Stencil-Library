@@ -1,0 +1,45 @@
+/* grid-primary-bar.css */
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* background: var(--accent-color); */
+    border-bottom: 1px solid #d1d1d1;
+  }
+  
+  .title-section {
+    flex: 1;
+    margin-left: 16px;
+    max-width: 300px;
+    
+  }
+  
+  .button-section {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .my-icon {
+    margin-right: -16px;  /* Adjust as needed */
+  }
+
+  .button.active {
+    border-bottom: 2px solid 'var(--secondary-color)';
+    font-weight: 600;
+  }
+
+  .active {
+    border-bottom: 2px solid 'var(--secondary-color)';
+    font-weight: 600;
+  }
+  
+
+  .tabs {
+    margin-right: 16px;
+  }
+
+  .right-margin {
+    margin-right: 16px;
+  }

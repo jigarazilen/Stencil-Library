@@ -1,0 +1,43 @@
+.list-item {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,.12);
+}
+.list-body {
+    display: flex;
+    padding-left: 16px;
+    gap: 8px;
+    align-items: center;
+    flex: 1;
+}
+
+.input {
+    margin-top: 5.5px;
+}
+
+
+.list-inputs {
+    display: flex;
+    flex: 1;
+    gap: 24px;
+    align-items: center;
+}
+
+.close-button {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    min-width: 215px;
+    white-space: nowrap;      
+    overflow: hidden;        
+    text-overflow: ellipsis;  
+    max-width: 215px;  
+}
+
+.select-container {
+    width: "200px";
+}

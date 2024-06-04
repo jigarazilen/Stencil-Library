@@ -1,0 +1,70 @@
+stencil-field.css
+:host {
+    display: block;
+    padding: 16px;
+    background-color: #f4f4f4; /* A lighter gray typical of Carbon backgrounds */
+  }
+  
+  input[type="checkbox"], input[type="radio"] {
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #8d8d8d; /* Carbon's default border color */
+    width: 20px; /* Typical size for touch targets */
+    height: 20px; /* Square dimension for checkbox, circular for radio */
+    border-radius: 50%; /* Full circle for radios, adjust for checkbox if needed */
+    position: relative;
+    cursor: pointer; /* Pointer to indicate clickable */
+    transition: all 0.3s ease; /* Smooth transition for visual feedback */
+  }
+  
+  input[type="checkbox"] {
+    border-radius: 2px; /* Slightly rounded corners for checkboxes */
+  }
+  
+  input[type="radio"]:checked, input[type="checkbox"]:checked {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+  }
+  
+  input[type="radio"]:checked::before, input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%; /* Circle inside radio or checkbox */
+  }
+
+  input[type="checkbox"]:checked::before {
+    content: '\2714'; /* Unicode character for checkmark */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px; /* Adjust size as needed */
+    color: white; /* Make sure the color is white */
+}
+
+  
+
+  .checkbox-container, .radio-container {
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    cursor: pointer;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 8px; /* Space between the checkbox and the label */
+}
+
+label {
+    margin: 0; /* Remove default margin */
+    display: block; /* Optional: ensures the label uses the full height */
+    line-height: 1; /* Aligns text properly within the flex container */
+    display: flex;
+    align-items: center;
+}
+

@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.inner-container {
+  width: 100%;
+  max-width: 720px;
+  margin-left: var(--spacing-03);
+  margin-right: var(--spacing-03);
+}
+
+.scrollable {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.background {
+  background-color: var(--secondary-color-light)
+}
+
+.hidden {
+    display: none;
+}
+
+.item {
+  padding-bottom: var(--spacing-02);
+}
+.items {
+  padding-top: var(--spacing-02);
+}
+
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.submit {
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  min-width: 48px;
+  min-height: 24px; /* Default size */
+}
+
+.submit:disabled {
+  background-color: var(--gray-05);
+  cursor:default;
+}
+
+.submit-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.center-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.finish-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-color: var(--secondary-color);
+  margin: -14.5px -16px 0px -17px;
+  padding: var(--spacing-02) var(--spacing-04) var(--spacing-04) var(--spacing-05);
+}

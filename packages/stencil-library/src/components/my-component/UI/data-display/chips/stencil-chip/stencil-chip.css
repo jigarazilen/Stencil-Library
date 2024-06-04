@@ -1,0 +1,45 @@
+.chip {
+  display: inline-flex; /* changed from inline-block */
+  align-items: center;
+  padding: 3px;
+  padding-left: 8px;
+  font-size: 14px;
+  border-radius: 16px;
+  color: #333;
+  cursor: pointer;
+  /* border: 1px solid #393939;   */
+  background-color: transparent; /* Make background transparent */
+  height: 26px;
+}
+
+.delete-button {
+  margin-left: 12px; /* Increased spacing */
+  background-color: #fff; /* light circle */
+  border: none;
+  border-radius: 50%; /* make it round */
+  cursor: pointer;
+  width: 24px; /* Increased button dimensions */
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete-button svg {
+  width: 20px; /* Increased SVG dimensions */
+  height: 20px;
+  fill: #333; /* dark 'x' */
+}
+
+
+.left-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%; /* makes it round */
+  width: 24px;
+  height: 24px;
+  margin-right: 8px; /* add some spacing between the icon and the text */
+}
+
+

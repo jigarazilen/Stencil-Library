@@ -1,0 +1,53 @@
+:host {
+  display: block;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  /* height: 100%; */
+  height: 100vh; 
+}
+
+.left-column {
+  flex: 1;
+  background-color: white;
+  height: 90vh;
+  overflow: scroll;
+  padding: 8px;
+}
+
+.right-column {
+  flex: 2;
+  margin-left: 16px;
+  padding: 16px;
+  /* padding-top: 0px; */
+}
+
+.filter-group[data-level="0"] {
+  padding-left: 0;
+}
+
+.filter-group[data-level="1"] {
+  padding-left: 20px;
+}
+
+.filter-group[data-level="2"] {
+  padding-left: 40px;
+}
+
+.filter-group {
+  margin-top: 24px; 
+  border-left: 1px solid #bababa;
+}
+
+.search-input-list {
+  height:  100%;
+  max-height: 70vh;
+  overflow: auto;
+}
+
+.recent-searches {
+  min-width: 300px;
+  margin-bottom: 10px;
+}

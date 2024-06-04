@@ -1,0 +1,146 @@
+
+  .selected-option {
+    border-bottom: var(--underline-standard) solid var(--gray-08);
+    border-top: 0px;
+    cursor: pointer;
+    background-color: var(--input-background);
+    display: flex;
+    justify-content: space-between;  
+    align-items: center; 
+    padding: var(--spacing-03);
+    min-width: 150px;
+  }
+  
+  .selected-option-label{
+    flex-grow: 1;
+  }
+
+  .udp-selector--large .selected-option {
+    background-color: var(--gray-08);
+    color: white;
+    width: 60px;
+    padding: var(--spacing-05);
+    box-shadow: var(--elevation-08);
+    border: 1px solid var(--gray-08);
+    width: 100px;
+    border-radius: 50px;
+    font-size: var(--body-font-size);
+  }
+  
+  .arrow {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 5px;
+  }
+  
+  .arrow::before,
+  .arrow::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0.6em;
+    height: 10px;
+    border-bottom: var(--underline-standard) solid var(--gray-09);
+  }
+
+
+  .udp-selector--large .selected-option .arrow::before,
+  .udp-selector--large .selected-option .arrow::after {
+  border-bottom: 1px solid white; 
+}
+  
+  .arrow::before {
+    left: -0.1em;
+    transform: rotate(-45deg);
+  }
+  
+  .arrow::after {
+    /* left: 0.5em; */
+    transform: rotate(45deg);
+  }
+
+  .selected-option:hover {
+    background-color: var(--input-hover);
+  }
+
+
+  .udp-selector--large .selected-option:hover {
+    background-color: var(--gray-09);
+  }
+
+  .selected-option:active {
+    border: var(--underline-standard) solid var(--primary-color);
+  }
+  
+
+  .selected-option:focus {
+    border: var(--underline-standard) solid var(--primary-color);
+  }
+  
+
+  .options-list {
+    max-width: 100%;
+    border: 1px solid var(--input-background);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 1;
+    max-height: 150px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: var(--border-radius);
+    box-shadow: var(--elevation-08);
+    position: absolute;
+  }
+  
+  .options-list li {
+    padding: 10px;
+    cursor: pointer;
+    background-color:  var(--input-background);
+  }
+  
+  .bx--label {
+    display: block;
+    margin-bottom:var(--spacing-02);
+  }
+  
+
+.options-list li {
+  position: relative; 
+  padding: 10px;
+  cursor: pointer;
+  background-color: white;
+}
+
+.options-list li:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* .options-list li .checkmark {
+  visibility: hidden;
+  width: 14px;
+  height: 14px;
+  background-color: #434242;
+  position: absolute;
+  border-radius: 50%;
+  margin-right: 10px;
+  left: 5px;
+}
+
+.options-list li .checkmark:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: translate(-50%, -50%) rotate(45deg);
+} */
+
+.error-message {
+  color: var(--error-color-main);
+}

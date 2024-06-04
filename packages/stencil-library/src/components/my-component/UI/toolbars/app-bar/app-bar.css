@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    background-color: #262626;
+    color: #fff;
+    padding-right: 1rem;
+  }
+  
+  .skip-to-content {
+    position: absolute;
+    top: -40px;
+  }
+  
+  .header__logo {
+    /* Add your logo styles here */
+  }
+  
+  .header__nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .header__global {
+    /* Global actions styling here */
+  }
+  

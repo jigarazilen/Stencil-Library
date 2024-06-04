@@ -1,0 +1,24 @@
+.udp-btn {
+  border: 0;
+  border-radius: 50%;
+  padding: 1px 3px;
+  cursor: pointer;
+  background-color: var(--accent-color-three);
+  transition: background-color 0.3s;
+}
+
+.udp-btn.no-bg {
+  background-color: transparent; /* Override for no background */
+}
+
+.udp-btn:hover {
+  background-color: #f0f0f0; 
+}
+
+.btn-content {
+  color: var(--accent-color-four)
+}
+
+.btn-content svg {
+  fill: currentColor; 
+}

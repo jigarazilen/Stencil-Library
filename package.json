@@ -1,0 +1,36 @@
+{
+  "name": "unity-ambient-x-react-demo",
+  "version": "2.0.0",
+  "private": false,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "lerna bootstrap",
+    "clean": "lerna clean",
+    "test": "lerna run test --stream",
+    "build": "lerna run build --scope unity-ambient-x && npm run postbuild && lerna run build --scope unity-ambient-x-react",
+    "lint": "lerna run lint",
+    "start": "nodemon --watch packages/stencil-library/src -e js,ts,jsx,tsx,json,css --exec npm run build:watch",
+    "build:watch": "lerna run build --scope unity-ambient-x && npm run postbuild && lerna run build --scope unity-ambient-x-react",
+    "postbuild": "node post-build-script.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  },
+  "engines": {
+    "npm": "use yarn"
+  },
+  "main": "post-build-script.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jigarazilen/Stencil-Library.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jigarazilen/Stencil-Library/issues"
+  },
+  "homepage": "https://github.com/jigarazilen/Stencil-Library#readme",
+  "description": ""
+}

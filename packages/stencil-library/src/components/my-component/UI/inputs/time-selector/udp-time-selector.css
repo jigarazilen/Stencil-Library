@@ -1,0 +1,41 @@
+.bx--form-item {
+    margin-bottom: var(--spacing-05);
+  }
+  
+  .bx--label {
+    display: block;
+    margin-bottom: var(--spacing-03);
+    font-size: var(--body-font-size);
+    font-family: var(--font-family);
+  }
+  
+  .bx--text-input {
+    display: inline-block;
+    padding: var(--spacing-03);
+    border: none;
+    border-bottom: var(--underline-standard) solid  var(--gray-08);
+    width: 97%;
+    font-size: var(--body-font-size);
+    font-family: var(--font-family);
+    outline: none;
+    background:  var(--input-background);
+  }
+  
+  .bx--text-input:focus {
+    border-bottom: var(--underline-standard) solid var(--primary-color);
+  }
+  
+
+  /* Style for placeholder text */
+.bx--text-input::placeholder {
+  font-size: var(--body-font-size);
+  font-family: var(--font-family);
+}
+.error-message {
+  color: var(--error-color-main);
+}
+
+/* Error state for input */
+.bx--text-input--error {
+  border-bottom: var(--underline-standard) solid var(--error-color-main);
+}

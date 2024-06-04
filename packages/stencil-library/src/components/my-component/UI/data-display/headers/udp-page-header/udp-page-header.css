@@ -1,0 +1,17 @@
+.header-container {
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    padding-left: 0px
+}
+
+.title {
+    flex: 1;
+    width: 100%;
+    display: 'none';
+}
+
+.radio-group {
+    display: flex;
+    gap: 16px;
+}

@@ -1,0 +1,54 @@
+.udp-radio-button {
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    margin: 0;
+    z-index: -1;
+    
+  }
+  
+  input[type="radio"] + label {
+    position: relative;
+    padding-left: 20px; /* Space for custom radio */
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Custom radio button */
+  input[type="radio"] + label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 17px;
+    height: 17px;
+    border: 1px solid #000;
+    border-radius: 50%;
+  }
+  
+  /* Checked state */
+  input[type="radio"]:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+  }
+  
+  /* Disabled state */
+  input[type="radio"]:disabled + label {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  

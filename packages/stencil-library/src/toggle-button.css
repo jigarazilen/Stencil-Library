@@ -1,0 +1,29 @@
+.toggle-button {
+    width: 36px; /* 30px * 1.2 */
+    height: 20px; /* 17px * 1.2 */
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 20px; /* 17px * 1.2 */
+  }
+  
+  .toggle-button.toggled {
+    background-color: var(--primary-color)
+  }
+  
+  .toggle-button .slider {
+    position: absolute;
+    width: 15.6px; /* 13px * 1.2 */
+    height: 15.6px; /* 13px * 1.2 */
+    left: 2.4px; /* 2px * 1.2 */
+    bottom: 2.4px; /* 2px * 1.2 */
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  .toggle-button.toggled .slider {
+    left: 18px; /* 15px * 1.2 */
+  }
+  

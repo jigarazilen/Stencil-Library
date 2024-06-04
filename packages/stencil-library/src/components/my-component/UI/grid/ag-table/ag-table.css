@@ -1,0 +1,5 @@
+/* src/global.css or src/app.css */
+.ag-body-viewport.ag-layout-normal {
+    overflow-y: hidden !important;
+  }
+  

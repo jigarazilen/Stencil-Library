@@ -1,0 +1,39 @@
+/* Base style for the chip */
+.chip {
+    padding: 0.3em 1em;
+    border-radius: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 0.5em; */
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  /* Styles for different statuses */
+  .success {
+    background-color: #4caf50; /* Green */
+    color: white;
+  }
+  
+  .warning {
+    background-color: #ffeb3b; /* Yellow */
+    color: #212121; /* Use a darker text color for contrast */
+  }
+  
+  .error {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  /* Default style if no status is matched */
+  .default {
+    background-color: var(--accent-color-six);
+    color: #757575; /* Dark Grey */
+  }
+
+    /* Default style if no status is matched */
+    .neutral {
+        background-color: #c4d6e0; /* Grey */
+        color: #757575; /* Dark Grey */
+      }
+  

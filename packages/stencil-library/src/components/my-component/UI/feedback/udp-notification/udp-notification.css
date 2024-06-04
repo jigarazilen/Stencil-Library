@@ -1,0 +1,58 @@
+/* src/components/udp-notification/udp-notification.css */
+
+:host {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1000;
+    display: block; /* Ensure that :host is not display: inline by default */
+  }
+  
+  .udp-notification {
+    min-width: 250px; /* or any other dimension you prefer */
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px; /* Carbon design system notification style */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better visibility */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    background-color: #f4f4f4; /* Default background; replace with your preferred default */
+  }
+  
+  .visible {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .status-success {
+    border-left: 4px solid #5aa700; /* Success color */
+  }
+  
+  .status-error {
+    border-left: 4px solid #e0182d; /* Error color */
+  }
+  
+  .status-warning {
+    border-left: 4px solid #ff832b; /* Warning color */
+  }
+  
+  .message {
+    flex: 1;
+    padding: 0 1rem;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Rest of your styles... */
+  

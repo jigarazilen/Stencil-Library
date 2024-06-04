@@ -1,0 +1,27 @@
+.container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1;
+    min-width: 600px;
+    /* background-color: azure; */
+  }
+  
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.chips {
+  display: flex; 
+  gap: 8px; 
+  flex-grow: 1;
+  /* padding-top: 8px;
+  padding-bottom: 8px; */
+}
+
+.overflow {
+  display: flex;
+}

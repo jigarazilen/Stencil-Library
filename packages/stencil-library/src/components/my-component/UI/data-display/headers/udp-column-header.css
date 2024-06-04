@@ -1,0 +1,17 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    background-color: var(--accent-color-two);
+    color: white;
+    
+  }
+  
+  .column, .operator, .criteria {
+    flex: 1;
+    text-align: left;
+    padding: 4px;
+  }
+  

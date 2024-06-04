@@ -1,0 +1,80 @@
+
+:host([open]) {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5); /* Greyed-out background */
+  }
+
+
+.dialog-container {
+    display: none;
+    /* Additional styles for the container */
+  }
+  
+  .dialog-container.open {
+    display: block;
+    /* Additional styles for when the dialog is open */
+  }
+  
+  .dialog-container {
+    display: none; /* Hide the dialog by default */
+    position: fixed; /* Position in relation to the viewport */
+    top: 50%; /* Start at the center vertically */
+    left: 50%; /* Start at the center horizontally */
+    transform: translate(-50%, -50%); /* Shift the dialog to be truly centered */
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16), 0 12px 24px rgba(0, 0, 0, 0.23);
+    max-width: 90%;
+    min-width: 500px;
+    overflow: hidden;
+    z-index: 10000; /* Make sure it's above the overlay */
+  }
+  
+  
+  .dialog-title {
+    padding-left: 16px;
+    font-size: 20px;
+  }
+  
+  .dialog-content {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .dialog-actions {
+    /* padding: 16px; */
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px; /* Adds gap between flex items */
+  }
+  
+  
+  button {
+    margin-left: 8px;
+  }
+  
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+  
+  .overlay-open {
+    display: block;
+  }
+  
+  .dialog-open {
+    display: block;
+  }

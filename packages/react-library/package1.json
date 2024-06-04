@@ -1,0 +1,50 @@
+{
+  "name": "unity-ambient-x-react",
+  "version": "0.0.3",
+  "description": "Unity React Wrapped Stencil Components",
+  "module": "dist/index.modern.js",
+  "source": "src/index.ts",
+  "types": "dist/types/index.d.ts",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ionic-team/stencil-component-starter.git"
+  },
+  "scripts": {
+    "test": "node ./__tests__/react-library.test.js",
+    "build": "vite build",
+    "build:dev": "vite build --sourcemap",
+    "start": "nodemon --watch lib --watch \"$(node -e \"const fs = require('fs'); console.log(fs.realpathSync('node_modules/unity-ambient-x'))\")\" -e js,ts,jsx,tsx,json,css --exec npx yarn localPublish",
+    "start:library": "nodemon --signal SIGKILL --watch .yalc --exec npx yarn start --force --no-open",
+    "localPublish": "vite build --sourcemap && yalc push",
+    "tsc": "tsc -p . --outDir ./dist"
+  },
+  "files": [
+    "dist",
+    ".yalc"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.3",
+    "unity-ambient-x": "24.0.18",
+    "yalc": "^1.0.0-pre.53"
+  },
+  "devDependencies": {
+    "@types/node": "^16.18.80",
+    "@types/react": "^18.2.55",
+    "@vitejs/plugin-react": "^3.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "typescript": "^5.3.3",
+    "vite": "4.1.1",
+    "vite-plugin-environment": "^1.1.3",
+    "vite-plugin-externalize-deps": "^0.5.0",
+    "vite-plugin-svgr": "^2.4.0"
+  },
+  "engines": {
+    "npm": "use yarn"
+  }
+}

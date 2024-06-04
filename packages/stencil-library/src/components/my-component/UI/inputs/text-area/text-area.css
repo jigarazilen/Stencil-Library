@@ -1,0 +1,45 @@
+:host {
+    display: block;
+  }
+  
+  label {
+    display: block;
+    margin-bottom:  var(--spacing-03);
+  }
+  
+  input {
+    padding: var(--spacing-03);
+    margin-bottom: var(--spacing-05)
+  }
+
+  .full-width {
+    width: 100%;
+    background-color: var(--input-background);
+    border-bottom: var(--underline-standard) solid var(--gray-08);
+    box-sizing: border-box;
+  }
+  
+  .error {
+    border: 1px solid var(--error-color-main); 
+  }
+  
+  .error-message {
+    color: var(--error-color-main);
+    margin-top: var(--spacing-02);
+  }
+
+  textarea {
+    border: none;
+    padding: var(--spacing-03);
+    font-size: var(--body-font-size);
+    font-weight: var(--body-font-weight);
+    font-family: var(--font-family)
+  }
+
+  textarea:focus {
+    border: none; 
+    outline: none;
+    border-bottom: var(--underline-standard) solid var(--primary-color);
+    padding: var(--spacing-03);
+  }
+

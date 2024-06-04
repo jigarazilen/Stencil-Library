@@ -1,0 +1,63 @@
+/* Base class */
+.my-button {
+  background-color: var(--primary-color);
+  box-sizing: border-box;
+  border: none;
+  color: white;
+  padding: 8px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  min-width: 48px;
+  min-height: 24px; /* Default size */
+}
+
+.my-button:hover {
+  background-color: var(--primary-color-dark) 
+}
+
+.my-button:disabled {
+  background-color: #c6c6c6;
+  color: #6f6f6f;
+  cursor: not-allowed;
+}
+
+/* Outline variant */
+.my-button--outline {
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  /* padding: calc(8px - 1px) 24px; */
+  padding: 5px 15px;
+  min-width: 64px;
+}
+
+.my-button--outline:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  
+}
+
+/* Secondary variant */
+.my-button--secondary {
+  background-color: transparent;
+  color: blue;
+}
+
+.my-button--secondary:hover {
+  /* background-color: brightness(var(--primary-color), 90%); */
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Size Variants */
+.my-button--short {
+  min-height: 24px; /* Shorter button */
+}
+
+.my-button--tall {
+  min-height: 48px; /* Taller button */
+}

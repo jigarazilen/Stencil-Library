@@ -1,0 +1,103 @@
+
+body {
+  font-family: var(--font-family);
+}
+
+/* Headings */
+h1 {
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  line-height: var(--h1-line-height);
+  font-family: var(--font-family);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  line-height: var(--h2-line-height);
+  font-family: var(--font-family);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  line-height: var(--h3-line-height);
+  font-family: var(--font-family);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  font-weight: var(--h4-font-weight);
+  line-height: var(--h4-line-height);
+  font-family: var(--font-family);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  font-weight: var(--h5-font-weight);
+  line-height: var(--h5-line-height);
+  font-family: var(--font-family);
+}
+
+h6 {
+  font-size: var(--h6-font-size);
+  font-weight: var(--h6-font-weight);
+  line-height: var(--h6-line-height);
+  font-family: var(--font-family);
+}
+
+/* Body */
+p {
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  font-family: var(--font-family);
+}
+
+/* Caption Text */
+.caption-text {
+  font-size: var(--caption-text-font-size);
+  font-weight: var(--caption-text-font-weight);
+  line-height: var(--caption-text-line-height);
+  font-family: var(--font-family);
+}
+
+/* Data Display One */
+.data-display-one {
+  font-size: var(--data-display-one-font-size);
+  font-weight: var(--data-display-one-font-weight);
+  line-height: var(--data-display-one-line-height);
+  font-family: var(--font-family);
+}
+
+/* Data Display Two */
+.data-display-two {
+  font-size: var(--data-display-two-font-size);
+  font-weight: var(--data-display-two-font-weight);
+  line-height: var(--data-display-two-line-height);
+  font-family: var(--font-family);
+}
+
+/* Data Display Three */
+.data-display-three {
+  font-size: var(--data-display-three-font-size);
+  font-weight: var(--data-display-three-font-weight);
+  line-height: var(--data-display-three-line-height);
+  font-family: var(--font-family);
+}
+
+/* Data Display Four */
+.data-display-four {
+  font-size: var(--data-display-four-font-size);
+  font-weight: var(--data-display-four-font-weight);
+  line-height: var(--data-display-four-line-height);
+  font-family: var(--font-family);
+}
+
+/* Button */
+.button {
+  font-size: var(--button-font-size);
+  font-weight: var(--button-font-weight);
+  line-height: var(--button-line-height);
+  font-family: var(--font-family);
+}

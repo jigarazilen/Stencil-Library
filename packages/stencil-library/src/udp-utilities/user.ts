@@ -1,0 +1,24 @@
+export interface User {
+    name: string | undefined;
+    firstName: string | undefined;
+    familyName: string | undefined;
+    jobTitle: string | undefined;
+    email: string | undefined;
+    mobile: string | undefined;
+    phone: string | undefined;
+    id: string | undefined;
+    location: string | undefined;
+    aadId: string | undefined;
+    accessToken: string | undefined;
+    defaultTenantId: string | undefined;
+    currentTenantId: string | undefined;
+    tenantIds: Array<string> | undefined;
+    roleIds: Array<string> | undefined;
+    products: Array<object> | undefined;
+    permissions: Array<object> | undefined;
+    can: any | undefined;
+    statusCode: number | undefined;
+    unityId: string | undefined;
+    additionalProperties: any | undefined;
+    roleNames: Array<string> | undefined;
+  }

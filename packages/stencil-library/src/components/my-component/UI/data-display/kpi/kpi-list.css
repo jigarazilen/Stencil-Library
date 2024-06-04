@@ -1,0 +1,30 @@
+.kpi-container {
+    display: flex;
+    align-items: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    justify-content: flex-end;
+    padding-right: 16px;
+    background-color: rgb(247, 245, 243);
+  }
+  
+  .kpi-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .kpi-label {
+    margin-right: 5px;
+    font-weight: 700;
+  }
+  
+  .kpi-value {
+    margin-left: 5px;
+  }
+  
+  .divider {
+    border-left: 1px solid black;
+    height: 20px;
+    margin: 0 10px;
+  }
+  

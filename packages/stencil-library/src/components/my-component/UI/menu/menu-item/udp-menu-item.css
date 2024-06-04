@@ -1,0 +1,14 @@
+.menu-item-root {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .menu-item-root:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-item-label {
+    font-size: 14px;
+  }
+  

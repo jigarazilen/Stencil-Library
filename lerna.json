@@ -1,0 +1,17 @@
+{
+  "version": "independent",
+  "npmClient": "npm",
+  "command": {
+    "publish": {
+      "allowBranch": ["master", "react-generation"],
+      "ignoreChanges": ["*.md", "build.js", "config.json"],
+      "message": "(auto) Lerna publish",
+      "registry": "URL_TO_MY_PACKAGE_REGISTRY"
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": ["--no-package-lock"]
+    }
+  },
+  "packages": ["packages/*"]
+}

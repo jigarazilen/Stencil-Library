@@ -1,0 +1,38 @@
+.bx--form-item {
+  margin-bottom: var(--spacing-05);
+}
+
+.bx--label {
+  display: block;
+  margin-bottom: var(--spacing-03);
+}
+
+.bx--text-input {
+  display: inline-block;
+  padding: var(--spacing-03);
+  padding-bottom: 9px;
+  border: none;
+  width: 97%;
+  font-size: var(--body-font-size);
+  outline: none;
+  background: var(--input-background);
+  border-bottom: var(--underline-standard) solid var(--gray-08);
+}
+.bx--text-input:user-invalid {
+  border-bottom: var(--underline-standard) solid var(--error-color-main);
+}
+
+.bx--text-input:focus {
+  border-bottom: var(--underline-standard) solid var(--primary-color);
+}
+
+/* Error message style */
+.error-message {
+  color: var(--error-color-main);
+  margin-top: var(--spacing-02)
+}
+
+/* Error state for input */
+.bx--text-input--error {
+  border-bottom: var(--underline-standard) solid var(--error-color-main);
+}

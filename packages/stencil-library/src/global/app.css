@@ -1,0 +1,330 @@
+/* Import base family to root*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
+
+
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+/* Theme color systems */
+
+/* Unity Theme */
+.unity-theme {
+  --primary-color: #0f62fe;
+  --secondary-color: #6c757d;
+}
+
+/* SAP Theme */
+.sap-theme {
+  --primary-color: #0a5079;
+  --secondary-color: #f0f4f8;
+  /* Additional SAP-specific variables */
+}
+
+.hydrated {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.spacing-13 {
+  margin: var(--component-spacing);
+}
+
+
+/* Fonts and System colors  */
+:root {
+  --font-family: 'IBM Plex Sans', 'Segoe UI', 'Helvetica', 'Arial', sans-serif;
+
+  /* Font Overrides */
+
+  --font-override-arial: 'Arial', var(--font-family);
+
+  /* Primary colors  */
+  --primary-color: #0074CC;
+  --primary-color-dark: #005595;
+
+
+   /* Secondary colors  */
+  --secondary-color: #7bdcb5;
+  --secondary-color-light: #d8f1e8;
+
+
+   /* Successful colors  */
+   --success-color-main: #7adcb5;
+   --success-color-light: #7adcb59d;
+
+
+    /* Warning colors  */
+  --warning-color-main: #ff832b;
+  --warning-color-light: rgb(239 218 219);
+
+
+   /* Error colors  */
+   --error-color-main: #8e1e24;
+   --error-color-light: rgb(239 218 219);
+
+
+    /* Disable colors  */
+    --disabled-color-main: rgb(210, 210, 210);
+
+
+    /* info colors  */
+    --info-color-main: rgb(52, 120, 176);
+
+
+
+       /* Grays   */
+       --gray-01: rgb(244, 244, 244);
+       --gray-02: rgb(230, 230, 230);
+       --gray-03: rgb(198, 198, 198);
+       --gray-04: rgb(168, 168, 168);
+       --gray-05: rgb(141, 141, 141);
+       --gray-06: rgb(111, 111, 111);
+       --gray-07: rgb(82, 82, 82);
+       --gray-08: rgb(57, 57, 57);
+       --gray-09: rgb(38, 38, 38);
+       --gray-10: rgb(22, 22, 22);
+
+
+    /* Text colors  */
+    --text-main: var(--gray-10);
+
+    /* icons */
+    --icon-main: var(--gray-10);
+    --icon-grey: var(--gray-07);
+
+    /* input background */
+    --input-background: var(--gray-01);
+    --input-hover:var(--gray-02);
+
+     /* Divider colors  */
+     --divider-color: rgba(var(--gray-10-r), var(--gray-10-g), var(--gray-10-b), 0.5);
+
+
+
+
+    /* elevation */
+
+    /* Elevation 1 - Very subtle for slight depth */
+  --elevation-01: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  /* Elevation 2 - Slightly more noticeable */
+  --elevation-02: 0px 1px 2px 0px rgba(0, 0, 0, 0.14), 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  /* Elevation 3 - For mild floating effects such as small controls */
+  --elevation-03: 0px 3px 4px -2px rgba(0, 0, 0, 0.2), 0px 3px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+
+  /* Elevation 4 - Standard elevation for medium-sized components */
+  --elevation-04: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+
+  /* Elevation 5 - Elevated components like modals or popovers */
+  --elevation-05: 0px 3px 5px -1px rgba(0, 0, 0, 0.2), 0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+
+  /* Elevation 6 - More prominent UI elements that need more depth */
+  --elevation-06: 0px 4px 6px -1px rgba(0, 0, 0, 0.2), 0px 6px 10px 0px rgba(0, 0, 0, 0.14), 0px 1px 18px 0px rgba(0, 0, 0, 0.12);
+
+  /* Elevation 7 - For elements that require significant visual separation */
+  --elevation-07: 0px 5px 7px -2px rgba(0, 0, 0, 0.2), 0px 7px 12px 0px rgba(0, 0, 0, 0.14), 0px 2px 16px 0px rgba(0, 0, 0, 0.12);
+
+  /* Elevation 8 - Prominent UI elements with significant visual prominence and depth */
+  --elevation-08: 0px 3px 3px -2px rgba(0,0,0,0.2), 0px 3px 4px 0px rgba(0,0,0,0.14), 0px 1px 8px 0px rgba(0,0,0,0.12);
+
+
+  /* Border Radius   */
+    --border-radius: 4px;
+
+  /* Accent colors  */
+    --accent-color: #d6dedf;
+    --accent-color-two: #6c7b8c;
+    --accent-color-three: #ecf2fc;
+    --accent-color-four: #3d7dfb;
+    --accent-color-five: #C7E4FC;
+    --accent-color-six: #FCD0CC;
+
+
+   /* Heading Styles */
+   --h1-font-size: 2rem;
+   --h1-font-weight: 600;
+   --h1-line-height: 1.25;
+ 
+   --h2-font-size: 1.75rem;
+   --h2-font-weight: 600;
+   --h2-line-height: 1.25;
+ 
+   --h3-font-size: 1.25rem;
+   --h3-font-weight: 600;
+   --h3-line-height: 1.25;
+ 
+   --h4-font-size: 1rem;
+   --h4-font-weight: 600;
+   --h4-line-height: 1.25;
+ 
+   --h5-font-size: 0.875rem;
+   --h5-font-weight: 600;
+   --h5-line-height: 1.25;
+ 
+   --h6-font-size: 1.1rem;
+   --h6-font-weight: 600;
+   --h6-line-height: 1.25;
+ 
+   /* Body Text */
+   --body-font-size: 0.9rem;
+   --body-font-weight: 400;
+   --body-line-height: 1.5;
+ 
+   /* Caption Text */
+   --caption-text-font-size: 0.75rem;
+   --caption-text-font-weight: 400;
+   --caption-text-line-height: 1.25;
+ 
+   /* Data Display Styles */
+   --data-display-one-font-size: 0.875rem;
+   --data-display-one-font-weight: 600;
+   --data-display-one-line-height: 1.25;
+ 
+   --data-display-two-font-size: 1.1rem;
+   --data-display-two-font-weight: 500;
+   --data-display-two-line-height: 1.25;
+ 
+   --data-display-three-font-size: 0.875rem;
+   --data-display-three-font-weight: 300;
+   --data-display-three-line-height: 1.25;
+ 
+   --data-display-four-font-size: 1.1rem;
+   --data-display-four-font-weight: 600;
+   --data-display-four-line-height: 1.25;
+ 
+   /* Button Text */
+   --button-font-size: 0.875rem;
+   --button-font-weight: 500;
+   --button-line-height: 1.25;
+
+  /* 6c7b8c - accent from designs  */ 
+  /* Spacing variables */
+    --spacing-01: 0.125rem; /* 2px */
+    --spacing-02: 0.25rem;  /* 4px */
+    --spacing-03: 0.5rem;   /* 8px */
+    --spacing-04: 0.75rem;  /* 12px */
+    --spacing-05: 1rem;     /* 16px */
+    --spacing-06: 1.5rem;  /* 24px */
+    --spacing-07: 2rem;    /* 32px */
+    --spacing-08: 2.5rem;
+    --spacing-09: 3rem;
+    --spacing-10: 4rem;
+    --spacing-11: 5rem;
+    --spacing-12: 6rem;
+    --spacing-13: 8rem;
+
+    --focus-outline: 2px solid var(--primary-color);
+
+  /* Animation */
+   --animation-duration: 0.3s;
+   --animation-easing: ease-out;
+
+  /* Component-specific shadows */
+   --shadow-card: 0px 2px 4px rgba(0, 0, 0, 0.05);
+   --shadow-modal: 0px 8px 16px rgba(0, 0, 0, 0.1);
+ 
+   /* Z-index */
+   --z-index-dropdown: 1000;
+   --z-index-sticky: 1020;
+   --z-index-fixed: 1030;
+   --z-index-modal: 1050;
+   --z-index-popover: 1060;
+   --z-index-tooltip: 1070;
+
+    /* Media Breakpoints */
+  --breakpoint-xs-max: 599px;
+  --breakpoint-sm-min: 600px;
+  --breakpoint-sm-max: 959px;
+  --breakpoint-md-min: 960px;
+  --breakpoint-md-max: 1279px;
+  --breakpoint-lg-min: 1280px;
+  --breakpoint-lg-max: 1919px;
+  --breakpoint-xl-min: 1920px;
+
+ /* line-weight */
+ --underline-standard: 2px;
+  
+}
+
+:root[data-theme='unity'] {
+  --primary-color: #0C2F50;
+  --secondary-color: #03BBC3;
+  /* ... other variables */
+}
+
+/* General spacing */
+.spacing-01 { margin: var(--spacing-01); }
+.spacing-02 { margin: var(--spacing-02); }
+
+
+.padding-01 { padding: var(--spacing-01); }
+.padding-02 { padding: var(--spacing-02); }
+
+.padding-13 { padding: var(--spacing-13); }
+
+/* Vertical margins */
+.mt-01 { margin-top: var(--spacing-01); }
+.mt-02 { margin-top: var(--spacing-02); }
+
+.mt-13 { margin-top: var(--spacing-13); }
+
+.mb-01 { margin-bottom: var(--spacing-01); }
+.mb-02 { margin-bottom: var(--spacing-02); }
+
+.mb-13 { margin-bottom: var(--spacing-13); }
+
+/* Vertical padding */
+.pt-01 { padding-top: var(--spacing-01); }
+.pt-02 { padding-top: var(--spacing-02); }
+/* ... */
+.pt-13 { padding-top: var(--spacing-13); }
+
+.pb-01 { padding-bottom: var(--spacing-01); }
+.pb-02 { padding-bottom: var(--spacing-02); }
+/* ... */
+.pb-13 { padding-bottom: var(--spacing-13); }
+
+
+.ag-body-vertical-scroll-viewport {
+  overflow-y: hidden !important;
+}
+
+.ag-body-viewport.ag-layout-normal {
+overflow-y: hidden !important;
+-webkit-overflow-scrolling: touch;
+}
+
+/* app.css - Try to match the exact hierarchy as seen in dev tools for increased specificity */
+.ag-grid .ag-body-viewport.ag-layout-normal .ag-body-vertical-scroll-viewport {
+  overflow-y: hidden !important;
+}
+
+
+/* src/global.css or src/app.css */
+.ag-body-viewport.ag-layout-normal {
+  overflow-y: hidden !important;
+}
+
+
+
+.ag-theme-material {
+
+  --ag-material-accent-color: #4a4446;
+}
+
+.ag-body-horizontal-scroll-viewport {
+  overflow-x: hidden;
+}
+
+
+.ag-center-cols-viewport {
+  width: 100%;
+  overflow-x: hidden;
+}

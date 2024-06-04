@@ -1,0 +1,23 @@
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-content {
+visibility: hidden;
+background-color: #000;
+color: #fff;
+text-align: center;
+border-radius: 4px;
+position: absolute;
+z-index: 99;
+transform: translateY(-20px);
+transform: translateX(-50px);
+padding: 5px;
+cursor: pointer;
+/* more styles here, matching Carbon Design System */
+}
+
+.tooltip-wrapper:hover .tooltip-content {
+visibility: visible;
+}

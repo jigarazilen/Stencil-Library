@@ -1,0 +1,14 @@
+.info-columns{
+    display: flex;
+}
+
+.column{
+    width: 100px
+}
+
+.toggle-options {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 16px;
+}

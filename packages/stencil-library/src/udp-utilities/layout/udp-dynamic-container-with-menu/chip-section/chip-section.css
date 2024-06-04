@@ -1,0 +1,72 @@
+.wrapper {
+    display: flex;
+    gap: 8px; /* You might need to adjust the spacing based on your theme.spacing */
+    flex-wrap: no-wrap;
+    /* background-color: #9fa8da80;  */
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    /* width: 500px; */
+  }
+  
+  .chipHolder {
+    display: flex;
+    gap: 8px;
+    flex-wrap: no-wrap;
+    align-items: center;
+    flex: 1 1 auto; /* Shorthand to allow the item to grow and shrink */
+    overflow: scroll;
+}
+
+  
+  .chipHolder::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .viewChip {
+    background-color: var(--primary-color);
+    color: white;
+    max-width: 150px;
+    transition: opacity 0.3s ease;
+  }
+  
+  .filterChipMenuIcon {
+    background: grey; /* Change this to your theme.palette.common.grey */
+    padding: 8px; /* theme.spacing */
+    color: #3f51b5; /* theme.palette.primary.main */
+  }
+  
+  .additionalFilterChip {
+    /* Additional styles for your additional filter chip */
+  }
+  
+  .KPI {
+    margin-left: auto;
+    display: flex;
+    gap: 8px; /* theme.spacing */
+    color: grey;
+    width: auto;
+  }
+  
+  .kpiValue {
+    color: black;
+    font-size: 1.1em;
+  }
+  
+  .kpiItem {
+    display: flex;
+    justify-content: center;
+    width: max-content;
+  }
+  
+  .kpiLabel {
+    width: max-content;
+    margin-right: 8px; /* theme.spacing */
+  }
+  
+  .clickedChip {
+    background-color: var(--primary-color);
+    color: white;
+    max-width: 150px;
+  }
+  

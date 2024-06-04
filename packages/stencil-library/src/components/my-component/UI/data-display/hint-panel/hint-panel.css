@@ -1,0 +1,24 @@
+.hint-container {
+    border-left: 3px solid blue; /* Replace with your primary color */
+  }
+  
+  .hint-content {
+    background-color: #F3F9FE;
+    padding: 1rem;
+  }
+  
+  .hide-hint-button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #0B79D0;
+    text-decoration: none;
+  }
+  
+  .hide-help {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+  

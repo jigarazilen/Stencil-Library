@@ -1,0 +1,41 @@
+.card {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 16px;
+    background-color: white;
+    padding-top: 0px;
+  }
+  
+  .udp-adornment {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+  
+  .title, .body, .footer {
+    /* padding: 8px; */
+  }
+  
+  .expandable {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .expanded {
+    max-height: 100px; /* Adjust as necessary */
+  }
+
+  .wrapper {
+    display: flex;
+    margin: 16px;
+  }
+  
+ .more-button {
+  display: flex;
+  align-items: center;
+ }
+  

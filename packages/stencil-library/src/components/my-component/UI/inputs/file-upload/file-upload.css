@@ -1,0 +1,67 @@
+/* file-upload.css */
+#drop-area {
+  height: 200px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  overflow-y: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#outer-container {
+  padding: 10px 5px;
+
+}
+
+#drop-area.highlight {
+  border-color: var(--primary-color);
+}
+
+#error-text {
+  color: var(--error-color-main);
+}
+
+#add-button {
+  border-radius: 5;
+}
+
+#remove-button {
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  border: 'none';
+  background: 'none';
+  cursor: 'pointer';
+}
+
+.file-container {
+   display: flex; 
+   flex-direction: row;
+   align-items: center;
+}
+
+.full-width {
+  width: auto
+}
+
+.contained-width {
+  width: 300px;
+
+}
+.file-text {
+  float: left
+}
+.inner-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-y: auto;
+}

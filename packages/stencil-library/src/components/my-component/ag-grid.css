@@ -1,0 +1,48 @@
+/* @import '../../../node_modules/ag-grid-enterprise/styles/ag-grid.css';
+@import '../../../node_modules/ag-grid-enterprise/styles/ag-theme-material.css'; */
+
+
+
+
+.ag-virtual-list-viewport  {
+    background-color: rgb(214, 218, 223) !important;
+  }
+
+  .ag-column-panel {
+    background-color: rgb(214, 218, 223) !important;
+}
+
+
+  .ag-checkbox-input-wrapper.ag-checked::after {
+    
+    color: #344861
+
+}
+
+.ag-header-cell, .ag-header-group-cell {
+    background: var(--primary-color);
+    color: rgb(214, 218, 223);
+}
+
+
+.ag-filter-toolpanel {
+  background-color: rgb(214, 218, 223) !important;
+}
+
+
+.ag-center-cols-viewport {
+  height: calc(100% + 17px) !important;
+}
+
+
+.ag-grid .ag-center-cols-viewport {
+  height: calc(100% + 17px) !important;
+}
+
+.ag-body-vertical-scroll-viewport {
+  overflow-y: hidden !important; 
+}
+
+.ag-body-viewport.ag-layout-normal {
+  overflow-y: hidden !important; 
+}

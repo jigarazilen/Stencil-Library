@@ -1,0 +1,14 @@
+:host {
+    display: block;
+  }
+  
+  .grid-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  udp-skeleton-loading {
+    flex-grow: 1;
+    margin: 2px;
+  }
+  
